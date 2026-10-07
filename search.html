@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Searching…</title>
+<link rel="search" type="application/opensearchdescription+xml" title="Googleen" href="opensearch.xml">
+<script>
+  var q = new URLSearchParams(location.search).get('q') || '';
+  location.replace('https://www.google.com/search?q=' + encodeURIComponent(q) + '&hl=en');
+</script>
+</head>
+<body><noscript>Enable JavaScript to continue to Google.</noscript></body>
+</html>

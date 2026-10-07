@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Googleen</title>
+<link rel="search" type="application/opensearchdescription+xml" title="Googleen" href="opensearch.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, sans-serif; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+  form { width: min(90vw, 420px); display: flex; gap: 8px; }
+  input { flex: 1; font-size: 18px; padding: 12px; }
+  button { font-size: 18px; padding: 12px 16px; }
+</style>
+</head>
+<body>
+<form action="search.html" method="get">
+  <input type="search" name="q" placeholder="Search Google (English)" autofocus autocomplete="off">
+  <button type="submit">Search</button>
+</form>
+</body>
+</html>
