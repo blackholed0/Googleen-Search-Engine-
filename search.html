@@ -1,14 +1,9 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Searching…</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Googleen</title>
 <link rel="search" type="application/opensearchdescription+xml" title="Googleen" href="opensearch.xml">
+<p>Opening Google… <a id="a">tap if nothing happens</a></p>
 <script>
-  var q = new URLSearchParams(location.search).get('q') || '';
-  location.replace('https://www.google.com/search?q=' + encodeURIComponent(q) + '&hl=en');
+var q=new URLSearchParams(location.search).get('q')||'',u='https://www.google.com/search?q='+encodeURIComponent(q)+'&hl=en';
+document.getElementById('a').href=u;setTimeout(function(){location.replace(u)},2500);
 </script>
-</head>
-<body><noscript>Enable JavaScript to continue to Google.</noscript></body>
-</html>
